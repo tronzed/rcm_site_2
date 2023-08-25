@@ -315,6 +315,7 @@ a:hover {
 .upper_cover .navbar-brand {
 	max-width: 105px;
 	display: inline-block;
+	margin: 0;
 }
 .h_bottom_banner {
 	margin-top: 10px;
@@ -752,4 +753,42 @@ a:hover {
 }
 .footer_about_box p {
 	margin-bottom: 30px;
+}
+.upper_cover .header_left_dropdown_box .left_dropdown_box_nav {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: end;
+}
+.upper_cover .header_left_dropdown_box ul:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.upper_cover .header_left_dropdown_box ul li .dropdown > .btn {
+	color: #5D616D;
+	font-size: 14px;
+	background-color: transparent;
+	padding: 0;
+	border: 0;
+	padding-left: 24px;
+}
+.upper_cover .header_left_dropdown_box ul li .dropdown > .btn img.icon_box {
+	position: absolute;
+	bottom: 2px;
+	left: 0;
+}
+.upper_cover .header_left_dropdown_box ul li .sm_text {
+	display: block;
+	font-size: 10px;
+	color: #727272;
+	margin-bottom: -3px;
+	text-align: left;
+}
+.upper_cover .header_left_dropdown_box .left_dropdown_box_nav li {
+	margin-right: 25px;
+}
+.upper_cover .header_left_dropdown_box .left_dropdown_box_nav li:last-child {
+	margin-right: 0;
 }
