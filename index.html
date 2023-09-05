@@ -18,40 +18,65 @@
     <!-- font-family: 'League Spartan', sans-serif; -->
     <!-- css -->
     <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet"> -->
+
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/aos.min.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
   </head>
   <body>
     <header>      
-      <div class="upper_cover" data-aos="fade-down" data-aos-duration="2000">
+      <div class="upper_cover">
         <div class="container">
           <div class="row">
             <div class="col-sm-3">
-              
               <div class="row">
-
                 <div class="col-md-5">
                   <a data-aos="fade-down" data-aos-duration="3000" class="navbar-brand" href="index.html"><img class="img-fluid" src="assets/images/logo_rcm.png" alt></a>
                 </div>  
-
                 <div class="col-md-7">
                   <div class="header_left_dropdown_box">
-                    <ul class="left_dropdown_box_nav">
+                    <ul class="left_dropdown_box_nav dropdown_box">
                       <li>
-                        <div class="dropdown">
-                          
-                          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">                          
-                            <img class="img-fluid icon_box" src="assets/images/loc_icon.png" alt="">
-                            <span class="sm_text">Deliver to</span>324002
-                          </button>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">324003</a></li>
-                            <li><a class="dropdown-item" href="#">324004</a></li>
-                            <li><a class="dropdown-item" href="#">324005</a></li>
-                          </ul>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                          <img class="img-fluid icon_box" src="assets/images/loc_icon.png" alt="">
+                          <span class="sm_text">Deliver to</span>324002
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="popup_box modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Where do you want delivery ?</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                
+                                <div class="text_box">
+                                  <h2>Enter Pincode</h2>
+                                  <p>To see product Availability</p>
+                                </div>
+                                <form action="" method="">
+                                  <div class="row">                                    
+                                    <div class="col-md-8">
+                                      <input type="text" name="" placeholder="Enter Pincode">
+                                    </div>
+                                    <div class="col-md-4">
+                                      <button type="submit">Apply</button>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
                         </div>
+
+
                       </li>
                       <li>
                         <div class="dropdown">
@@ -66,7 +91,6 @@
                           </ul>
                         </div>
                       </li>
-
                     </ul>
                   </div>
                 </div>
@@ -82,16 +106,43 @@
             </div>
             <div class="col-sm-5">
               <div class="user_nav_cover">
-                <ul class="user_nav_box">
-                  <li><a href="#">World of RCM</a></li>
-                  <li><a href="#">Support & Feedback</a></li>
+                <ul class="user_nav_box dropdown_box">
+
+
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      World of RCM
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><h5 class="dropdown-header">Marketing Material</h5></li>
+                      <li><a class="dropdown-item" href="#">Marketing Plan</a></li>
+                      <li><a class="dropdown-item" href="#">Product Videos</a></li>
+                      <li><a class="dropdown-item" href="#">Presentations</a></li>
+                      <li><h2 class="dropdown-header">Corporate Information</h2></li>
+                      <li><a class="dropdown-item" href="#">About us</a></li>
+                      <li><a class="dropdown-item" href="#">Message for Associate Buyers</a></li>
+                      <li><a class="dropdown-item" href="#">Delivery Centers</a></li>
+                      <li><a class="dropdown-item" href="#">Meetings Schedule</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                      Support & Feedback
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                      <li><a class="dropdown-item" href="#">Associate Buyer</a></li>
+                      <li><a class="dropdown-item" href="#">Grievance Redressal</a></li>
+                      <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                      <li><a class="dropdown-item" href="#">Compliance Documents</a></li>
+                    </ul>
+                  </li>               
                   <li class="cart_box icon_box"><a href="#">Cart 
                     <span class="mat_icon material-symbols-outlined">shopping_cart</span> 
                     <span class="box">(<span class="count">3</span>)</span></a></li>
                   <li>
                     <a class="btn custom_btn btn-secondary btn-lg" href="#">Sign In</a>
-                  </li>
-                </ul>
+                  </li>              
+                </ul>          
               </div>
             </div>
           </div>
@@ -825,7 +876,7 @@
     <!-- JavaScript -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
     <script src="assets/js/aos.min.js"></script>
     <script src="assets/js/custom.js"></script>
   </body>
